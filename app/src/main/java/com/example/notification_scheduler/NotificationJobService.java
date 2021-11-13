@@ -34,7 +34,7 @@ public class NotificationJobService extends JobService {
                 .setPriority(NotificationCompat.PRIORITY_HIGH)
                 .setDefaults(NotificationCompat.DEFAULT_ALL)
                 .setAutoCancel(true);
-        mNotifyManager.notify(0, notifyBuilder.build());
+        mNotifyManager.notify(0, notifyBuilder.build())  ;
         return false;
     }
 
